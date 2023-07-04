@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- Label唯一的标识 -->
+  <key>Label</key>
+  <string>io.panxiaoan.uhost</string>
+  <!-- 指定要运行的脚本 -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/local/bin/uhost.sh</string>
+  </array>
+
+  <!-- 2小时运行一次 -->
+  <key>StartInterval</key>
+  <integer>7200</integer>
+
+  <!-- 每天22点运行一次 -->
+  <!-- 
+  <key>StartCalendarInterval</key>
+  <dict>
+        <key>Minute</key>
+        <integer>00</integer>
+        <key>Hour</key>
+        <integer>22</integer>
+  </dict>
+  -->
+
+  <key>KeepAlive</key>
+  <false/>
+  <key>RunAtLoad</key>
+  <true/>
+
+  <!-- 标准输出文件 -->
+  <key>StandardOutPath</key>
+  <string>/tmp/uhost.log</string>
+  <!-- 标准错误输出文件，错误日志 -->
+  <key>StandardErrorPath</key>
+  <string>/tmp/uhost.err</string>
+</dict>
+</plist>
