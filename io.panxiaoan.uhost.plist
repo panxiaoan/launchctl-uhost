@@ -11,9 +11,9 @@
     <string>/usr/local/bin/uhost.sh</string>
   </array>
 
-  <!-- 2小时运行一次 -->
+  <!-- 1小时运行一次 -->
   <key>StartInterval</key>
-  <integer>7200</integer>
+  <integer>3600</integer>
 
   <!-- 每天22点运行一次 -->
   <!-- 
